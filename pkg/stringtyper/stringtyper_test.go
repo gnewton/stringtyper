@@ -534,6 +534,7 @@ func TestCasesFloat32Formats(t *testing.T) {
 			ti.CheckFieldTypeAndLength(string(col))
 			if k := ti.Kind(); k != reflect.Float32 {
 				t.Log(fmt.Errorf("value=%e format=%s  string=%s expected=%s detected=%s typeInfo=%+v", value, string(format), col, reflect.Float32, k, ti))
+				t.Fatal()
 			}
 		}
 	}
@@ -549,7 +550,7 @@ func TestCasesFloat64Formats(t *testing.T) {
 			ti.CheckFieldTypeAndLength(string(col))
 			if k := ti.Kind(); k != reflect.Float64 {
 				t.Log(fmt.Errorf("value=%e format=%s  string=%s expected=%s detected=%s typeInfo=%+v", value, string(format), col, reflect.Float64, k, ti))
-				//t.Error(string(format), value, col, reflect.Float64, k, ti)
+				t.Fatal()
 			}
 		}
 	}

@@ -161,7 +161,6 @@ func (ti *StringTyper) alwaysInt() bool {
 }
 
 func (ti *StringTyper) checkInt(i int64) {
-	//log.Println("$ ", ti.MaxInt, i)
 	if ti.MinInt == nil {
 		ti.MinInt = &i
 	} else {
@@ -176,7 +175,6 @@ func (ti *StringTyper) checkInt(i int64) {
 			ti.MaxInt = &i
 		}
 	}
-	//log.Println(*ti.MaxInt)
 }
 
 func (ti *StringTyper) checkFloat(v float64) {
