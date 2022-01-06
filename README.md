@@ -29,7 +29,8 @@ For examples, see the tests in
 [https://github.com/gnewton/stringtyper/blob/main/pkg/stringtyper/stringtyper_test.go](https://github.com/gnewton/stringtyper/blob/main/pkg/stringtyper/stringtyper_test.go).
 
 # Usage
-From [examples/simple/main.go](https://github.com/gnewton/stringtyper/blob/main/pkg/stringtyper/examples/simple/main.go)
+From
+[examples/simple/main.go](https://github.com/gnewton/stringtyper/blob/main/examples/simple/main.go).
 
     package main
     
