@@ -1,4 +1,4 @@
-package feildur
+package stringtyper
 
 import (
 	"fmt"
