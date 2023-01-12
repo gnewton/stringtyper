@@ -4,6 +4,8 @@ stringtype tries to determimine the Go type that will best satisfy
 representing a series of one or more example strings supplied by the
 user.
 
+m
+
 Where "best" is the most specific Go type that can represent what is
 presented, using the range of the type where appropriate. 
 So for int and float types, the range can constrain the type that is
